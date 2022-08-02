@@ -1,8 +1,8 @@
 INSERT INTO user (id, username, password, roles)
-VALUES (1, 'User1', 'pass1', 'ROLE_USER');
+VALUES (1, 'User1', '$2a$12$dZspC9yDSSFL6QMGEKU2mOwnrSL0fMeNaDNdgZqUWGCxIzDLq//82', 'ROLE_USER');
 
 INSERT INTO user (id, username, password, roles)
-VALUES (2, 'User2', 'pass2', 'ROLE_USER');
+VALUES (2, 'User2', '$2a$12$dMPgfSMo.tozEcXCxC3LluYOCUWwvkz9bcyz6PVrkdh13bPKMO8d2', 'ROLE_USER');
 
 INSERT INTO item (id, sellable, item_name, description, photourl, starting_price, purchase_price,
                   last_offered_bid_id, user_id)
