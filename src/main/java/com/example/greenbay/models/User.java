@@ -16,6 +16,21 @@ public class User {
   private Long id;
   private String username;
   private String password;
+  private String roles;
   @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST, mappedBy = "user")
   private List<Item> notSoldItems;
+
+  //region Getters&Setters
+  public String getUsername() {
+    return username;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public String getRoles() {
+    return roles;
+  }
+  //endregion
 }

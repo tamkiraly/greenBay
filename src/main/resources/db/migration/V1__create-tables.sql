@@ -2,6 +2,7 @@ CREATE TABLE user (
     id                        BIGINT        NOT NULL auto_increment,
     username                  VARCHAR(255)  NOT NULL,
     password                  VARCHAR(255)  NOT NULL,
+    roles                     VARCHAR(255)  NOT NULL,
     PRIMARY KEY (id),
     UNIQUE (id)
 );
