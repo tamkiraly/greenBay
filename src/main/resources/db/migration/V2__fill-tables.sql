@@ -1,8 +1,8 @@
-INSERT INTO user (id, username, password)
-VALUES (1, 'User1', 'pass1');
+INSERT INTO user (id, username, password, roles)
+VALUES (1, 'User1', 'pass1', 'ROLE_USER');
 
-INSERT INTO user (id, username, password)
-VALUES (2, 'User2', 'pass2');
+INSERT INTO user (id, username, password, roles)
+VALUES (2, 'User2', 'pass2', 'ROLE_USER');
 
 INSERT INTO item (id, sellable, item_name, description, photourl, starting_price, purchase_price,
                   last_offered_bid_id, user_id)
